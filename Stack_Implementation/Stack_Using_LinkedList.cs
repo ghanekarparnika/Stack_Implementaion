@@ -22,5 +22,20 @@ namespace Stack_Implementation
 
             return linkedList.Last.Value;
         }
+        public T Pop()
+        {
+            if (linkedList.Count == 0)
+            {
+                throw new InvalidOperationException("The stack is empty.");
+            }
+
+            LinkedListNode<T> lastNode = linkedList.Last;
+            linkedList.RemoveLast();
+            return lastNode.Value;
+        }
+        public bool IsEmpty()
+        {
+            return linkedList.Count == 0;
+        }
     }
 }

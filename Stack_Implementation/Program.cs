@@ -13,3 +13,15 @@ stack.Push(56);
 
 Console.WriteLine("Top of the stack: " + stack.Peek()); // Output: 56
 
+Console.WriteLine("Pop: " + stack.Pop()); // Output: Pop: 56
+Console.WriteLine("Pop: " + stack.Pop()); // Output: Pop: 30
+Console.WriteLine("Pop: " + stack.Pop()); // Output: Pop: 70
+
+if (stack.IsEmpty())
+{
+    Console.WriteLine("The stack is empty.");
+}
+else
+{
+    Console.WriteLine("The stack is not empty.");
+}
