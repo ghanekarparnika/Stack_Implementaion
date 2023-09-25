@@ -13,3 +13,10 @@ stack.Push(56);
 
 Console.WriteLine("Top of the stack: " + stack.Peek()); // Output: 56
 
+Queue_Using_LinkedList<int> queue = new Queue_Using_LinkedList<int>();
+
+queue.Enqueue(56);
+queue.Enqueue(30);
+queue.Enqueue(70);
+
+Console.WriteLine("Front of the queue: " + queue.Peek()); // Output: 56
